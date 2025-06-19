@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef1f5;
+      padding: 40px;
+    }
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #038e5f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Resume Submission Form</h2>
+  <form action="submit_resume.php" method="post">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>-
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="education">Education:</label>
+    <textarea id="education" name="education" placeholder="Example: B.E in EIE from Kongu Engineering College (2023-2027)"></textarea>
+
+    <label for="skills">Technical Skills:</label>
+    <textarea id="skills" name="skills" placeholder="Example: Python, C, HTML, JavaScript, etc."></textarea>
+
+    <label for="projects">Projects / Papers:</label>
+    <textarea id="projects" name="projects" placeholder="Mention your project titles and a short description."></textarea>
+
+    <label for="internship">Internship / Experience:</label>
+    <textarea id="internship" name="internship"></textarea>
+
+    <label for="certifications">Certifications:</label>
+    <textarea id="certifications" name="certifications"></textarea>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob" placeholder="DD-MM-YYYY">
+
+    <label for="languages">Languages Known:</label>
+    <input type="text" id="languages" name="languages">
+
+    <label for="declaration">Declaration:</label>
+    <textarea id="declaration" name="declaration">I hereby declare that the information provided above is true to the best of my knowledge and belief.</textarea>
+
+    <button type="submit">Submit Resume</button>
+  </form>
+</div>
+
+</body>
+</html>
